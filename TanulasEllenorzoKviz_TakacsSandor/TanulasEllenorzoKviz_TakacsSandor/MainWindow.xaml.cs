@@ -122,18 +122,167 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             int listTemaSorszam = tema.SelectedIndex;
 
         }
-       
+        
         private void tesztInditasa_Click(object sender, RoutedEventArgs e)
         {
 
             kvizOldal.Visibility = Visibility.Visible;
 
         }
+        private void Kerdesek()
+        {
+            if (kSzam < kerdesSzama.Count)
+            {
+                i = kerdesSzama[kSzam];
+            }
+            else
+            {
+                UjraIndit();
+            }
+
+            switch (i)
+            {
+                case 1:
+
+                    kerdesSzovege.Text = "Question 1";
+                    valasz1.Content = "Valasz 1";
+                    valasz2.Content = "Valasz 2 Correct";
+                    valasz3.Content = "Valasz 3";
+                    valasz4.Content = "Valasz 4";
+
+                    valasz2.Tag = "1";
+
+                    break;
+
+                case 2:
+
+                    kerdesSzovege.Text = "Question 2";
+
+                    valasz1.Content = "Valasz 1 Correct";
+                    valasz2.Content = "Valasz 2";
+                    valasz3.Content = "Valasz 3";
+                    valasz4.Content = "Valasz 4";
+
+                    valasz1.Tag = "1";
+
+                    break;
+
+                case 3:
+
+                    kerdesSzovege.Text = "Question 4";
+
+                    valasz1.Content = "Valasz 1";
+                    valasz2.Content = "Valasz 2";
+                    valasz3.Content = "Valasz 3 Correct";
+                    valasz4.Content = "Valasz 4";
+
+                    valasz3.Tag = "1";
+
+                    break;
+
+                case 4:
+
+                    kerdesSzovege.Text = "Question 4";
+
+                    valasz1.Content = "Valasz 1";
+                    valasz2.Content = "Valasz 2";
+                    valasz3.Content = "Valasz 3";
+                    valasz4.Content = "Valasz 4 Correct";
+
+                    valasz4.Tag = "1";
+
+                    break;
+
+                case 5:
+
+                    kerdesSzovege.Text = "Question 5";
+
+                    valasz1.Content = "Valasz 1 Correct";
+                    valasz2.Content = "Valasz 2";
+                    valasz3.Content = "Valasz 3";
+                    valasz4.Content = "Valasz 4";
+
+                    valasz1.Tag = "1";
 
 
 
 
-        private void kiertekeles_Click(object sender, RoutedEventArgs e)
+                    break;
+                case 6:
+
+                    kerdesSzovege.Text = "Question 6";
+
+                    valasz1.Content = "Valasz 1";
+                    valasz2.Content = "Valasz 2";
+                    valasz3.Content = "Valasz 3 Correct";
+                    valasz4.Content = "Valasz 4";
+
+                    valasz3.Tag = "1";
+
+
+
+                    break;
+                case 7:
+
+                    kerdesSzovege.Text = "Question 7";
+
+                    valasz1.Content = "Valasz 1";
+                    valasz2.Content = "Valasz 2 Correct";
+                    valasz3.Content = "Valasz 3";
+                    valasz4.Content = "Valasz 4";
+
+                    valasz2.Tag = "1";
+
+
+
+                    break;
+                case 8:
+
+                    kerdesSzovege.Text = "Question 8";
+
+                    valasz1.Content = "Valasz 1";
+                    valasz2.Content = "Valasz 2";
+                    valasz3.Content = "Valasz 3";
+                    valasz4.Content = "Valasz 4 Correct";
+
+                    valasz4.Tag = "1";
+
+
+                    break;
+                case 9:
+
+                    kerdesSzovege.Text = "Question 9";
+
+                    valasz1.Content = "Valasz 1";
+                    valasz2.Content = "Valasz 2";
+                    valasz3.Content = "Valasz 3 Correct";
+                    valasz4.Content = "Valasz 4";
+
+                    valasz3.Tag = "1";
+
+
+
+                    break;
+
+                case 10:
+
+                    kerdesSzovege.Text = "Question 10";
+
+                    valasz1.Content = "Valasz 1 Correct";
+                    valasz2.Content = "Valasz 2";
+                    valasz3.Content = "Valasz 3";
+                    valasz4.Content = "Valasz 4";
+
+                    valasz1.Tag = "1";
+
+
+
+                    break;
+            }
+
+
+
+            private void kiertekeles_Click(object sender, RoutedEventArgs e)
         {
             
                 MessageBox.Show("A tantárgyi kvíz véget ért az ön számára. " + pontszam.Content);
