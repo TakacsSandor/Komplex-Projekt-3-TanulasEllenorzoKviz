@@ -56,10 +56,11 @@ namespace TanulasEllenorzoKviz_TakacsSandor
                     egyAdat.valaszok = darab[3];
                     feladatok.Add(egyAdat);
 
+
                 }
             }
-
-        }
+        }  
+        
         static List<string> tantargyNevek = new List<string>();
         static List<List<string>> tantargyTemak = new List<List<string>>();
 
@@ -87,7 +88,9 @@ namespace TanulasEllenorzoKviz_TakacsSandor
                 }
                 tantargyTemak.Add(egySor);
             }
+            
         }
+        
         public void ListBoxFeltolteseTantargyNevekkel()
         {
             foreach (var sor in tantargyNevek)
@@ -112,19 +115,21 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             int listTemaSorszam = tema.SelectedIndex;
 
         }
-
-
+       
         private void tesztInditasa_Click(object sender, RoutedEventArgs e)
         {
+
             kvizOldal.Visibility = Visibility.Visible;
-            foOldal.Visibility = Visibility.Hidden;
 
         }
 
-
-        private void KerdesekLegeneralasa()
+        private void kiertekeles_Click(object sender, RoutedEventArgs e)
         {
-            Random rnd = new Random();
+            
+                MessageBox.Show("A tantárgyi kvíz véget ért az ön számára. " + pontszam.Content);
+                kvizOldal.Visibility = Visibility.Hidden;
+                foOldal.Visibility = Visibility.Visible;
+            
         }
     }
 }
