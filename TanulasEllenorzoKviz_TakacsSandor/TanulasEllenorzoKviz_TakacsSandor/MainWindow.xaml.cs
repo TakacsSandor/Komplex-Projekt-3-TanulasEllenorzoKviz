@@ -302,14 +302,32 @@ namespace TanulasEllenorzoKviz_TakacsSandor
                 kerdesSorrend.Content += " " + kerdesSzama[i].ToString();
             }
         }
-        private void kiertekeles_Click(object sender, RoutedEventArgs e)
+        private void valaszokEllenorzese(object sender, RoutedEventArgs e)
         {
+            Button senderButton = sender as Button;
+            if (senderButton.Tag.ToString() == "1")
+            {
+                Pontszama++;
+            }
+            if (kSzam < 0)
+            {
+                kSzam = 0;
+            }
+            else
+            {
+                kSzam++;
+            }
+            pontszam.Content = "Helyes válaszok száma: " + Pontszama + "/" + kerdesSzama.Count;
+            Kerdesek();
+        }
+            private void kiertekeles_Click(object sender, RoutedEventArgs e)
+            {
 
             MessageBox.Show("A tantárgyi kvíz véget ért az ön számára. " + pontszam.Content);
             kvizOldal.Visibility = Visibility.Hidden;
             foOldal.Visibility = Visibility.Visible;
 
-        }
+            }
     }
 }
 
