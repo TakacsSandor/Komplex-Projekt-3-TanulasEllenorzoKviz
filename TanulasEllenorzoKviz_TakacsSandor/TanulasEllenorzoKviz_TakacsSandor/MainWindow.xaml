@@ -16,7 +16,7 @@
 
         <Button x:Name="tesztInditasa" FontSize="40px" Content="Teszt indítása" HorizontalAlignment="Left" Margin="272,353,0,0" VerticalAlignment="Top" Width="254" Height="54" Click="tesztInditasa_Click"/>
 
-        <Grid Name="kvizOldal" Background="Gray" Visibility="Visible">
+        <Grid Name="kvizOldal" Background="Gray" Visibility="Hidden">
             <Label x:Name="pontszam" FontSize="18"/>
             <Label x:Name="tantargyFelirat" FontSize="40" Content="A tantárgy itt helyezkedik el." HorizontalAlignment="Left" Margin="136,61,0,0" VerticalAlignment="Top"/>
             <Label x:Name="temaFelirat" FontSize="35" Content="Itt helyezkedne el a téma" HorizontalAlignment="Left" Margin="196,129,0,0" VerticalAlignment="Top"/>

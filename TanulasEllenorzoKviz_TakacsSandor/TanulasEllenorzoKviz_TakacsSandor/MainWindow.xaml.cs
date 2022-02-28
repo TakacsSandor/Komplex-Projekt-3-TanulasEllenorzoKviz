@@ -34,6 +34,7 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             Beolvasas();
             EgyedikEloAllitasa();
             ListBoxFeltolteseTantargyNevekkel();
+            Kerdesek();
 
         }
         public class Tantargy
@@ -317,8 +318,17 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             {
                 kSzam++;
             }
+            if (kSzam > 9)
+            {
+                valasz1.IsEnabled = false;
+                valasz2.IsEnabled = false;
+                valasz3.IsEnabled = false;
+                valasz4.IsEnabled = false;
+            }
+           
             pontszam.Content = "Helyes válaszok száma: " + Pontszama + "/" + kerdesSzama.Count;
             Kerdesek();
+            
         }
             private void kiertekeles_Click(object sender, RoutedEventArgs e)
             {
