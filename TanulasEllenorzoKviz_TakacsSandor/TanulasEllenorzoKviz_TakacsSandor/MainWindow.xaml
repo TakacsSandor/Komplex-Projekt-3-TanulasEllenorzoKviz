@@ -14,7 +14,7 @@
         <ComboBox FontSize="38" x:Name="tema" HorizontalAlignment="Left" Margin="211,288,0,0" VerticalAlignment="Top" Width="376" Height="60" SelectionChanged="tema_SelectionChanged"/>
         <Label Content="Válassz témakört:" FontSize="45px" HorizontalAlignment="Left" Margin="211,213,0,0" VerticalAlignment="Top" Width="376"/>
        
-        <Button x:Name="tesztInditasa" FontSize="40px" Content="Teszt indítása" HorizontalAlignment="Left" Margin="272,353,0,0" VerticalAlignment="Top" Width="254" Height="54"/>
+        <Button x:Name="tesztInditasa" FontSize="40px" Content="Teszt indítása" HorizontalAlignment="Left" Margin="272,353,0,0" VerticalAlignment="Top" Width="254" Height="54" Click="tesztInditasa_Click"/>
 
         <Grid Name="kvizOldal" Background="Gray" Visibility="Hidden">
             <Label x:Name="pontszam" FontSize="18"/>

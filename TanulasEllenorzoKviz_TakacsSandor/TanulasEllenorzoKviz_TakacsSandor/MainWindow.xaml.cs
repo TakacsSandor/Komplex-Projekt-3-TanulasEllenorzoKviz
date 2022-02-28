@@ -27,7 +27,7 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             Beolvasas();
             EgyedikEloAllitasa();
             ListBoxFeltolteseTantargyNevekkel();
-            
+
         }
         public class Tantargy
         {
@@ -104,6 +104,7 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             {
                 tema.Items.Add(tantargyTemak[listSorSzam][i]);
             }
+
         }
 
         private void tema_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -112,9 +113,18 @@ namespace TanulasEllenorzoKviz_TakacsSandor
 
         }
 
+
         private void tesztInditasa_Click(object sender, RoutedEventArgs e)
         {
+            kvizOldal.Visibility = Visibility.Visible;
+            foOldal.Visibility = Visibility.Hidden;
 
+        }
+
+
+        private void KerdesekLegeneralasa()
+        {
+            Random rnd = new Random();
         }
     }
 }
