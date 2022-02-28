@@ -27,7 +27,7 @@ namespace TanulasEllenorzoKviz_TakacsSandor
         int i;
 
         int Pontszama;
- 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -66,8 +66,8 @@ namespace TanulasEllenorzoKviz_TakacsSandor
 
                 }
             }
-        }  
-        
+        }
+
         static List<string> tantargyNevek = new List<string>();
         static List<List<string>> tantargyTemak = new List<List<string>>();
 
@@ -95,9 +95,9 @@ namespace TanulasEllenorzoKviz_TakacsSandor
                 }
                 tantargyTemak.Add(egySor);
             }
-            
+
         }
-        
+
         public void ListBoxFeltolteseTantargyNevekkel()
         {
             foreach (var sor in tantargyNevek)
@@ -122,7 +122,7 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             int listTemaSorszam = tema.SelectedIndex;
 
         }
-        
+
         private void tesztInditasa_Click(object sender, RoutedEventArgs e)
         {
 
@@ -136,8 +136,8 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             i = 0;
             KvizStart();
         }
-            private void Kerdesek()
-            {
+        private void Kerdesek()
+        {
             if (kSzam < kerdesSzama.Count)
             {
                 i = kerdesSzama[kSzam];
@@ -288,14 +288,28 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             }
 
 
-
-            private void kiertekeles_Click(object sender, RoutedEventArgs e)
+        }
+        private void KvizStart()
         {
-            
-                MessageBox.Show("A tantárgyi kvíz véget ért az ön számára. " + pontszam.Content);
-                kvizOldal.Visibility = Visibility.Hidden;
-                foOldal.Visibility = Visibility.Visible;
-            
+            var randomList = kerdesSzama.OrderBy(a => Guid.NewGuid()).ToList();
+
+            kerdesSzama = randomList;
+
+            kerdesSorrend.Content = null;
+
+            for (int i = 0; i < kerdesSzama.Count; i++)
+            {
+                kerdesSorrend.Content += " " + kerdesSzama[i].ToString();
+            }
+        }
+        private void kiertekeles_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBox.Show("A tantárgyi kvíz véget ért az ön számára. " + pontszam.Content);
+            kvizOldal.Visibility = Visibility.Hidden;
+            foOldal.Visibility = Visibility.Visible;
+
         }
     }
 }
+
