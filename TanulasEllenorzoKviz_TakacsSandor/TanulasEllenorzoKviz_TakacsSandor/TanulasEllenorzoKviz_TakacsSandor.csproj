@@ -94,5 +94,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fizikaKvizForras.txt" />
+    <Resource Include="informatikaKvizForras.txt" />
+    <Resource Include="magyarKvizForras.txt" />
+    <Resource Include="matematikaKvizForras.txt" />
+    <Resource Include="toriKvizForras.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
