@@ -317,7 +317,7 @@ namespace TanulasEllenorzoKviz_TakacsSandor
                 valasz3.IsEnabled = false;
                 valasz4.IsEnabled = false;
             }
-           
+
             pontszam.Content = "Helyes válaszok száma: " + Pontszama + "/" + kerdesSzama.Count;
             Kerdesek();
             
@@ -328,6 +328,21 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             MessageBox.Show("A tantárgyi kvíz véget ért az ön számára. " + pontszam.Content);
             kvizOldal.Visibility = Visibility.Hidden;
             foOldal.Visibility = Visibility.Visible;
+            valasz1.IsEnabled = true;
+            valasz2.IsEnabled = true;
+            valasz3.IsEnabled = true;
+            valasz4.IsEnabled = true;
+            UjraIndit();
+        }
+
+        private void elozo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void kovetkezo_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

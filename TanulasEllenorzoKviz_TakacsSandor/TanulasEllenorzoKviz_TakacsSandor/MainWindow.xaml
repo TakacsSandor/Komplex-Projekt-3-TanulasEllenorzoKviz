@@ -16,11 +16,11 @@
 
         <Button x:Name="tesztInditasa" FontSize="40px" Content="Teszt indítása" HorizontalAlignment="Left" Margin="272,353,0,0" VerticalAlignment="Top" Width="254" Height="54" Click="tesztInditasa_Click"/>
 
-        <Grid Name="kvizOldal" Background="Gray" Visibility="Visible">
+        <Grid Name="kvizOldal" Background="Gray" Visibility="Hidden">
             <Label x:Name="pontszam" FontSize="18"/>
-            <Label x:Name="tantargyFelirat" FontSize="40" Content="Fizika" HorizontalAlignment="Left" Margin="308,63,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="temaFelirat" FontSize="35" Content="Elektromosság" HorizontalAlignment="Left" Margin="236,126,0,0" VerticalAlignment="Top"/>
-            <TextBlock x:Name="kerdesSzovege"  TextAlignment="Center" Padding="3" FontSize="25" Width="572" HorizontalAlignment="Left" Margin="91,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top">
+            <Label x:Name="tantargyFelirat"  FontSize="40" Content="Fizika" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="temaFelirat" FontSize="35" Content="Elektromosság" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="kerdesSzovege"  TextAlignment="Center" Padding="3" FontSize="25" Width="572" HorizontalAlignment="Center" Margin="0,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top">
                 Itt helyezkedne el a a kérdés szövege.
             </TextBlock>
             <Label x:Name="kerdesSorrend" Content="" HorizontalAlignment="Left" Margin="308,10,0,0" VerticalAlignment="Top" Width="411" Height="46"/>
@@ -29,8 +29,8 @@
             <Button x:Name="valasz3" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Click="valaszokEllenorzese" Content="Valasz 3" Tag="0"  HorizontalAlignment="Left" Margin="444,370,0,0" VerticalAlignment="Top"/>
             <Button x:Name="valasz4" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Click="valaszokEllenorzese" Content="Valasz 4" Tag="0"  HorizontalAlignment="Left" Margin="444,445,0,0" VerticalAlignment="Top"/>
             <Button x:Name="kiertekeles" Content="Kiértékelés" FontSize="18" Background="DarkSalmon" Height="50" Margin="308,500,334,19" Click="kiertekeles_Click"/>
-            <Button x:Name="kovetkezo" Content="Következő" FontSize="18" Background="DarkSalmon" HorizontalAlignment="Left" Margin="632,500,0,0" VerticalAlignment="Top" Width="150" Height="50"/>
-            <Button x:Name="elozo" Content="Előző" FontSize="18" Background="DarkSalmon" HorizontalAlignment="Left" Margin="10,500,0,0" VerticalAlignment="Top" Width="150" Height="50"/>
+            <Button x:Name="kovetkezo" Content="Következő" FontSize="18" Background="DarkSalmon" HorizontalAlignment="Left" Margin="632,500,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="kovetkezo_Click"/>
+            <Button x:Name="elozo" Content="Előző" FontSize="18" Background="DarkSalmon" HorizontalAlignment="Left" Margin="10,500,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="elozo_Click"/>
         </Grid>
     </Grid>
 </Window>
