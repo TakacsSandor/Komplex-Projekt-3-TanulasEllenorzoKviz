@@ -16,10 +16,10 @@
 
         <Button x:Name="tesztInditasa" FontSize="40px" Content="Teszt indítása" HorizontalAlignment="Left" Margin="272,353,0,0" VerticalAlignment="Top" Width="254" Height="54" Click="tesztInditasa_Click"/>
 
-        <Grid Name="kvizOldal" Background="Gray" Visibility="Hidden">
+        <Grid Name="kvizOldal" Background="Gray" Visibility="Visible">
             <Label x:Name="pontszam" FontSize="18"/>
-            <Label x:Name="tantargyFelirat" FontSize="40" Content="A tantárgy itt helyezkedik el." HorizontalAlignment="Left" Margin="136,61,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="temaFelirat" FontSize="35" Content="Itt helyezkedne el a téma" HorizontalAlignment="Left" Margin="196,129,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="tantargyFelirat" FontSize="40" Content="Fizika" HorizontalAlignment="Left" Margin="308,63,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="temaFelirat" FontSize="35" Content="Elektromosság" HorizontalAlignment="Left" Margin="236,126,0,0" VerticalAlignment="Top"/>
             <TextBlock x:Name="kerdesSzovege"  TextAlignment="Center" Padding="3" FontSize="25" Width="572" HorizontalAlignment="Left" Margin="91,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top">
                 Itt helyezkedne el a a kérdés szövege.
             </TextBlock>

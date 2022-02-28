@@ -152,11 +152,11 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             {
                 case 1:
 
-                    kerdesSzovege.Text = "Question 1";
-                    valasz1.Content = "Valasz 1";
-                    valasz2.Content = "Valasz 2 Correct";
-                    valasz3.Content = "Valasz 3";
-                    valasz4.Content = "Valasz 4";
+                    kerdesSzovege.Text = "Mi a feszültség jele?";
+                    valasz1.Content = "V";
+                    valasz2.Content = "U";
+                    valasz3.Content = "I";
+                    valasz4.Content = "R";
 
                     valasz2.Tag = "1";
 
@@ -164,12 +164,12 @@ namespace TanulasEllenorzoKviz_TakacsSandor
 
                 case 2:
 
-                    kerdesSzovege.Text = "Question 2";
+                    kerdesSzovege.Text = "Mi a feszültség mértékegysége?";
 
-                    valasz1.Content = "Valasz 1 Correct";
-                    valasz2.Content = "Valasz 2";
-                    valasz3.Content = "Valasz 3";
-                    valasz4.Content = "Valasz 4";
+                    valasz1.Content = "V";
+                    valasz2.Content = "A";
+                    valasz3.Content = "F";
+                    valasz4.Content = "U";
 
                     valasz1.Tag = "1";
 
@@ -177,12 +177,12 @@ namespace TanulasEllenorzoKviz_TakacsSandor
 
                 case 3:
 
-                    kerdesSzovege.Text = "Question 4";
+                    kerdesSzovege.Text = "Mi az áramerősség jele?";
 
-                    valasz1.Content = "Valasz 1";
-                    valasz2.Content = "Valasz 2";
-                    valasz3.Content = "Valasz 3 Correct";
-                    valasz4.Content = "Valasz 4";
+                    valasz1.Content = "U";
+                    valasz2.Content = "A";
+                    valasz3.Content = "I";
+                    valasz4.Content = "R";
 
                     valasz3.Tag = "1";
 
@@ -190,12 +190,12 @@ namespace TanulasEllenorzoKviz_TakacsSandor
 
                 case 4:
 
-                    kerdesSzovege.Text = "Question 4";
+                    kerdesSzovege.Text = "Mi az ellenállás jele?";
 
-                    valasz1.Content = "Valasz 1";
-                    valasz2.Content = "Valasz 2";
-                    valasz3.Content = "Valasz 3";
-                    valasz4.Content = "Valasz 4 Correct";
+                    valasz1.Content = "I";
+                    valasz2.Content = "V";
+                    valasz3.Content = "Ω";
+                    valasz4.Content = "R";
 
                     valasz4.Tag = "1";
 
@@ -203,93 +203,84 @@ namespace TanulasEllenorzoKviz_TakacsSandor
 
                 case 5:
 
-                    kerdesSzovege.Text = "Question 5";
+                    kerdesSzovege.Text = "Ohm törvénye melyik két mennyiség között állapít meg összefüggést?";
 
-                    valasz1.Content = "Valasz 1 Correct";
-                    valasz2.Content = "Valasz 2";
-                    valasz3.Content = "Valasz 3";
-                    valasz4.Content = "Valasz 4";
+                    valasz1.Content = "feszültség, áramerősség";
+                    valasz2.Content = "feszültség, ellenállás";
+                    valasz3.Content = "áramerősség, ellenállás";
+                    valasz4.Content = "egyik sem";
 
                     valasz1.Tag = "1";
 
-
-
-
                     break;
+
                 case 6:
 
-                    kerdesSzovege.Text = "Question 6";
+                    kerdesSzovege.Text = "Ohm törvénye értelmében az adott fogyasztón mért feszültség és áramerősség:";
 
-                    valasz1.Content = "Valasz 1";
-                    valasz2.Content = "Valasz 2";
-                    valasz3.Content = "Valasz 3 Correct";
-                    valasz4.Content = "Valasz 4";
+                    valasz1.Content = "párhuzamos";
+                    valasz2.Content = "fordítottan arányos";
+                    valasz3.Content = "egyenesen arányos";
+                    valasz4.Content = "egyenlő;";
 
                     valasz3.Tag = "1";
 
-
-
                     break;
+
                 case 7:
 
-                    kerdesSzovege.Text = "Question 7";
+                    kerdesSzovege.Text = "Mekkora az ellenállás, ha 20 V a feszültség és 10 A az áramerősség?";
 
-                    valasz1.Content = "Valasz 1";
-                    valasz2.Content = "Valasz 2 Correct";
-                    valasz3.Content = "Valasz 3";
-                    valasz4.Content = "Valasz 4";
+                    valasz1.Content = "20 Ω";
+                    valasz2.Content = "2 Ω";
+                    valasz3.Content = "0,5 Ω";
+                    valasz4.Content = "200 Ω";
 
                     valasz2.Tag = "1";
 
-
-
                     break;
+
                 case 8:
 
-                    kerdesSzovege.Text = "Question 8";
+                    kerdesSzovege.Text = "Mi a töltés jele?";
 
-                    valasz1.Content = "Valasz 1";
-                    valasz2.Content = "Valasz 2";
-                    valasz3.Content = "Valasz 3";
-                    valasz4.Content = "Valasz 4 Correct";
+                    valasz1.Content = "C";
+                    valasz2.Content = "T";
+                    valasz3.Content = "R";
+                    valasz4.Content = "Q";
 
                     valasz4.Tag = "1";
 
-
                     break;
+
                 case 9:
 
-                    kerdesSzovege.Text = "Question 9";
+                    kerdesSzovege.Text = "Mekkora a feszültség ha az ellenállás 20 Ω és 10 A az áramerősség?";
 
-                    valasz1.Content = "Valasz 1";
-                    valasz2.Content = "Valasz 2";
-                    valasz3.Content = "Valasz 3 Correct";
-                    valasz4.Content = "Valasz 4";
+                    valasz1.Content = "2 V";
+                    valasz2.Content = "0,5 V";
+                    valasz3.Content = "200 V";
+                    valasz4.Content = "20 V";
 
                     valasz3.Tag = "1";
-
-
 
                     break;
 
                 case 10:
 
-                    kerdesSzovege.Text = "Question 10";
+                    kerdesSzovege.Text = "Melyiket nevezzük fogyasztónak?";
 
-                    valasz1.Content = "Valasz 1 Correct";
-                    valasz2.Content = "Valasz 2";
-                    valasz3.Content = "Valasz 3";
-                    valasz4.Content = "Valasz 4";
+                    valasz1.Content = "izzólámpa";
+                    valasz2.Content = "párhuzamos kapcsolás";
+                    valasz3.Content = "amper";
+                    valasz4.Content = "elektroszkóp";
 
                     valasz1.Tag = "1";
 
-
-
                     break;
             }
-
-
         }
+
         private void KvizStart()
         {
             var randomList = kerdesSzama.OrderBy(a => Guid.NewGuid()).ToList();
@@ -303,6 +294,7 @@ namespace TanulasEllenorzoKviz_TakacsSandor
                 kerdesSorrend.Content += " " + kerdesSzama[i].ToString();
             }
         }
+
         private void valaszokEllenorzese(object sender, RoutedEventArgs e)
         {
             Button senderButton = sender as Button;
@@ -330,14 +322,13 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             Kerdesek();
             
         }
-            private void kiertekeles_Click(object sender, RoutedEventArgs e)
-            {
 
+        private void kiertekeles_Click(object sender, RoutedEventArgs e)
+        {
             MessageBox.Show("A tantárgyi kvíz véget ért az ön számára. " + pontszam.Content);
             kvizOldal.Visibility = Visibility.Hidden;
             foOldal.Visibility = Visibility.Visible;
-
-            }
+        }
     }
 }
 
