@@ -21,6 +21,13 @@ namespace TanulasEllenorzoKviz_TakacsSandor
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<int> kerdesSzama = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        int kSzam = 0;
+
+        int i;
+
+        int Pontszama;
+ 
         public MainWindow()
         {
             InitializeComponent();
@@ -122,6 +129,9 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             kvizOldal.Visibility = Visibility.Visible;
 
         }
+
+
+
 
         private void kiertekeles_Click(object sender, RoutedEventArgs e)
         {
