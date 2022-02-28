@@ -129,8 +129,15 @@ namespace TanulasEllenorzoKviz_TakacsSandor
             kvizOldal.Visibility = Visibility.Visible;
 
         }
-        private void Kerdesek()
+        private void UjraIndit()
         {
+            Pontszama = 0;
+            kSzam = -1;
+            i = 0;
+            KvizStart();
+        }
+            private void Kerdesek()
+            {
             if (kSzam < kerdesSzama.Count)
             {
                 i = kerdesSzama[kSzam];
