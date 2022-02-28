@@ -9,30 +9,28 @@
     <Grid Name="foOldal" Visibility="Visible" Background="Gray">
         <Label FontWeight="Bold" Content="Tantárgyi kvíz feladatsor" FontSize="50px" HorizontalAlignment="Left" Margin="104,0,0,0" VerticalAlignment="Top"/>
         <Label Content="Válassz tantárgyat:" FontSize="45px" HorizontalAlignment="Left" Margin="211,73,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="tantargy" FontSize="38px" HorizontalAlignment="Left" Margin="211,148,0,0" VerticalAlignment="Top" Width="376" Height="60">
-            <ComboBoxItem Name="tortenelem" Content="Történelem" FontSize="38px" HorizontalAlignment="Left" Width="364"/>
-            <ComboBoxItem Name="magyar" Content="Magyar" FontSize="38px" HorizontalAlignment="Left" Width="364"/>
-            <ComboBoxItem Name="matematika" Content="Matematika" FontSize="38px" HorizontalAlignment="Left" Width="364"/>
-            <ComboBoxItem Name="fizika" Content="Fizika" FontSize="38px" HorizontalAlignment="Left" Width="364"/>
+        <ComboBox x:Name="tantargy" FontSize="38px" HorizontalAlignment="Left" Margin="211,148,0,0" VerticalAlignment="Top" Width="376" Height="60" SelectionChanged="tantargy_SelectionChanged">
         </ComboBox>
+        <ComboBox FontSize="38" x:Name="tema" HorizontalAlignment="Left" Margin="211,288,0,0" VerticalAlignment="Top" Width="376" Height="60" SelectionChanged="tema_SelectionChanged"/>
         <Label Content="Válassz témakört:" FontSize="45px" HorizontalAlignment="Left" Margin="211,213,0,0" VerticalAlignment="Top" Width="376"/>
-        <ComboBox x:Name="temakor" HorizontalAlignment="Left" Margin="211,288,0,0" VerticalAlignment="Top" Width="376" Height="60"/>
-        <Button x:Name="tesztInditasa" FontSize="40px" Content="Teszt indítása" HorizontalAlignment="Left" Margin="272,353,0,0" VerticalAlignment="Top" Width="254" Height="54" Click="tesztInditasa_Click"/>
+       
+        <Button x:Name="tesztInditasa" FontSize="40px" Content="Teszt indítása" HorizontalAlignment="Left" Margin="272,353,0,0" VerticalAlignment="Top" Width="254" Height="54"/>
 
-        <Grid Name="kvizOldal" Background="Gray" Visibility="Visible">
+        <Grid Name="kvizOldal" Background="Gray" Visibility="Hidden">
             <Label x:Name="pontszam" FontSize="18"/>
             <Label x:Name="tantargyFelirat" FontSize="40" Content="" HorizontalAlignment="Left" Margin="308,30,0,0" VerticalAlignment="Top"/>
             <Label x:Name="temaFelirat" FontSize="35" Content="" HorizontalAlignment="Left" Margin="392,195,0,0" VerticalAlignment="Top"/>
             <TextBlock x:Name="kerdesSzovege" TextAlignment="Center" Padding="3" FontSize="20" Width="572" HorizontalAlignment="Left" Margin="103,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top">
             </TextBlock>
-            <Button x:Name="valasz1" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Click="valaszokEllenorzese" Content="Valasz 1" Tag="0"  HorizontalAlignment="Left" Margin="126,370,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="valasz2" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Click="valaszokEllenorzese" Content="Valasz 2" Tag="0"  HorizontalAlignment="Left" Margin="125,445,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="valasz3" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Click="valaszokEllenorzese" Content="Valasz 3" Tag="0"  HorizontalAlignment="Left" Margin="444,370,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="valasz4" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Click="valaszokEllenorzese" Content="Valasz 4" Tag="0"  HorizontalAlignment="Left" Margin="444,445,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="kiertekeles" Content="Kiértékelés" FontSize="18" Background="DarkSalmon" Height="50" Margin="308,500,334,19" Click="kiertekeles_Click"/>
-            <Button x:Name="kovetkezo" Content="Következő" FontSize="18" Background="DarkSalmon" HorizontalAlignment="Left" Margin="632,500,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="kovetkezo_Click"/>
-            <Button x:Name="elozo" Content="Előző" FontSize="18" Background="DarkSalmon" HorizontalAlignment="Left" Margin="10,500,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="elozo_Click"/>
+            <Button x:Name="valasz1" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Content="Valasz 1" Tag="0"  HorizontalAlignment="Left" Margin="126,370,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="valasz2" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Content="Valasz 2" Tag="0"  HorizontalAlignment="Left" Margin="125,445,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="valasz3" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Content="Valasz 3" Tag="0"  HorizontalAlignment="Left" Margin="444,370,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="valasz4" Height="50" Width="200" FontSize="18" Background="DarkSalmon" Content="Valasz 4" Tag="0"  HorizontalAlignment="Left" Margin="444,445,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="kiertekeles" Content="Kiértékelés" FontSize="18" Background="DarkSalmon" Height="50" Margin="308,500,334,19"/>
+            <Button x:Name="kovetkezo" Content="Következő" FontSize="18" Background="DarkSalmon" HorizontalAlignment="Left" Margin="632,500,0,0" VerticalAlignment="Top" Width="150" Height="50"/>
+            <Button x:Name="elozo" Content="Előző" FontSize="18" Background="DarkSalmon" HorizontalAlignment="Left" Margin="10,500,0,0" VerticalAlignment="Top" Width="150" Height="50"/>
             
         </Grid>
+        
     </Grid>
 </Window>
